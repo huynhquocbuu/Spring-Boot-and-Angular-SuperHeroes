@@ -11,7 +11,6 @@ export class AntiHeroListComponent implements OnInit{
   @Input() headers: Array<{headerName: string, fieldName: keyof AntiHero}> = [];
   @Input() antiHeroes: Array<AntiHero> = [];
   @Output() antiHero = new EventEmitter<{antiHero: AntiHero, action :TableActions}>();
-
   headerFields: string[] = [];
 
   constructor() { }
